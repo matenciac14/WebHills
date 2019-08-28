@@ -1,0 +1,742 @@
+
+/* estilos globales*/
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+.contenedor{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.verde{color: #547640;}
+.cafe{color: #553322;}
+.gris{color:#E9E9E9;}
+section{text-align: center;}
+
+
+/****************** primera seccion nav h1 *********************/
+#btn-menu,  label {
+    display: none;
+}
+.inicio{
+    background-image: url(./img/Hills-condominio-club-Banner.png);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+.redes{
+    width:7rem;
+    position: fixed;
+    right: 0;
+    text-align: center;
+}
+.redes a{    
+    margin: .5rem ;    
+    display: block;
+    background: #547640;
+    text-align: center;
+}
+.redes a >img{
+    width: 50%;
+    position: relative;
+    margin:1.2rem auto;
+}
+.menu-fixed{
+    background: white;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 1px 5px rgba(0, 0,0, .4);
+    width: 100%;
+    
+}
+.cabecera{
+    transition: all ease .7s;
+    -webkit-transition: all ease .7s;;
+    -moz-transition:all ease .7s; ;
+    
+}
+.barra{
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    align-items: flex-end;
+}
+.barra .logo{
+    width:20rem;
+    text-align: center;
+}
+.barra a> img{
+    width: 100%;
+    
+}
+.navegacion{
+    
+    padding-bottom: 1.5rem
+}
+.navegacion a{
+    font-weight: bold;
+    color: #553322;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 10px;
+    letter-spacing:.2rem;
+}
+
+.contenedor h1{
+    font-family: 'Poppins';
+    margin: 5rem auto 0;
+    text-align: center;
+    font-size: 2.5rem;
+    color:white;
+    letter-spacing:.3rem;
+    line-height: 5rem;
+    animation-duration: 3s;
+    animation-name:aparecer;
+}
+.contenedor h1 > strong{
+    display: block;
+    letter-spacing:.4rem;
+    font-size:3rem;
+    animation-duration: 3s;
+    animation-name:aparecerdos;
+}
+.contenedor h1 >strong img{
+    width:2%;
+}
+
+/****************** segunda seccion tu proximo hogar *********************/
+.sec2{
+    margin:5rem auto;
+    text-align: center;
+    
+}
+.img1{
+    background-image: url(img/Hills-tu-proximo-hogar.png);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+
+}
+.img1,.cuadro1{  
+    min-height:50rem;
+    width: 40%;
+    display: inline-block;
+}
+.cuadro1{
+    background: #E9E9E9;
+    vertical-align: top;
+    
+}
+.cuadro1 h3{
+    font-family: 'poppins';
+    letter-spacing: .2rem;
+    font-family:'poppins';
+    font-size: 3rem;
+    margin-top: 3.5rem;
+    font-weight: bold;
+ }
+.cuadro1 p{
+    font-family: 'Open Sans';
+    margin: 2rem auto;
+    width: 60%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.textsolo{
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.hoja{
+    margin-top: 2.5rem;
+    width: 4rem;
+}
+
+
+
+/****************** tercera seccion amenidades*********************/
+
+
+.image-gallery{
+    display: grid;
+    grid-template-columns: repeat(5 ,1fr);
+    grid-auto-rows: repeat(7,1fr);
+    grid-auto-rows: minmax(200px, auto);
+    grid-gap: 10px;
+    margin: 0 auto; /* centerkan image-gallery */	
+}
+
+.image-gallery .imguno{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end: 3;
+    background-image: url('./img/AMENIDADES/hILLS-PARQUEADERO.png');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+.image-gallery .img2{
+    grid-row-start:1;
+    grid-row-end: 3;
+    background-image: url('./img/AMENIDADES/Hills-ascensor.png'); 
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+.image-gallery .img3{
+    grid-row-start:1;
+    grid-row-end: 3;
+    background-image: url('./img/AMENIDADES/Hills-comercial.png '); 
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+.image-gallery .img4{
+    grid-row-start:1;
+    grid-row-end: 3;
+
+    background-image: url('./img/AMENIDADES/Hills-turco.png'); 
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+.image-gallery .img5{
+    grid-row-start: 3;
+    grid-row-end: 7;
+
+    background-image: url('img/AMENIDADES/Hills-gym.png'); 
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+
+.image-gallery .img6{
+    grid-row-start: 3;
+    grid-row-end: 5; 
+    background-image: url('img/AMENIDADES/Hills-zonas-verdes.png');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center; 
+
+}
+.image-gallery .img7{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-image: url('img/AMENIDADES/Hills-Salon-de-eventos.png'); 
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+.image-gallery .img8{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start:4 ;
+    grid-column-end: 6;
+
+    background-image: url('img/AMENIDADES/Hills-Lobby.png'); 
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+.image-gallery .img9{
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column-start:2;
+    grid-column-end: 4;
+  
+    background-image: url('img/AMENIDADES/Hills-piscina.png'); 
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+.image-gallery .img10{
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column-start:4 ;
+    grid-column-end: 6;
+  
+    background-image: url('img/AMENIDADES/Hills-BBQ.png'); 
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+
+.contet{
+    height: 100%;
+    width: 100%;
+    text-align: center;  
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr ;    
+    grid-auto-rows: minmax(80px, auto);    
+}
+.contet h4{
+    font-family: 'poppins';
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #553322;
+    text-transform: uppercase;
+    grid-row-start:3;
+    margin: auto;
+     
+
+}
+.contet p{
+    font-family: 'open sans';
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+    z-index: 5000;
+}
+.contet img{
+    height: 20rem;
+    margin:  auto;
+    display: none;
+}
+div #lolo:hover div.contet{
+    background: rgba(84,118,64, .8);
+    transition-duration: .5s
+}
+div #lolo:hover div.contet >img,h4,p{
+    color: white;
+    display: block;
+    transition-duration: 2s    
+}
+div #lolo:hover div.contet >p{
+    display: block;
+}
+div #lolo:hover div.contet >h4{
+    color: white;
+    grid-row-start:2;
+}
+
+
+
+
+
+/****************** Cuarta seccion  tipo de apartamentos*********************/
+.part2{
+    margin-top: 5rem;
+    background: none;
+    
+    
+}
+.part2 h3{
+    margin: 0 auto;
+    font-size: 2rem;    
+    line-height: 2.2rem;
+    font-weight: bold;
+    font-family: 'Poppins';
+     width: 80%;
+     text-align: left;
+}
+.part2 p{
+    font-family: 'Open Sans';
+    margin: 2rem auto 2rem;
+    font-size: 1.5rem;
+    text-align: left;
+    width: 80%;
+    letter-spacing: normal; 
+    line-height: 2.2rem;
+}
+
+.part2 img{
+    width: 100%;
+}
+
+.part2 >.hoja{  
+    position: relative;
+    margin: 2.5rem auto;  
+    width: 3rem;
+    display: block;
+}
+.btn-tipo{
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+}
+.part2 a{    
+    font-family: 'poppins';
+    background: #547640;
+    color: white;
+    text-decoration: none;
+    padding: 1.3rem 2rem;
+    display: inline-block;
+}
+
+/****************** Quinta seccion  galeria*********************/
+.imagengrande{
+    width: 100%;
+}
+.imagengrande img{
+    width:100%;
+}
+/****************** sexta seccion formulario y youtube *********************/
+.sec6 h4 p{
+    font-family: 'Open Sans';
+    color: #553322;
+    width: 35%;
+    position: relative;
+    margin: 20px auto ;
+    font-size: 2.5rem;
+}
+.youtube{
+    height: 40rem;
+    width: 50%;
+    margin-right: 3rem;
+}
+.formulario{
+    width: 30%;
+}
+.cuadro1 form{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+}
+.cuadro1 form h4 {
+    font-family: 'poppins';
+    margin-top: 3rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.cuadro1 form input {
+    font-family: 'open sans';
+    border-radius: .5rem;
+    border: none;
+    display: block;
+    width: 90%;
+    margin: 15px auto;
+    height: 2.5rem;
+}
+.cuadro1 form textarea{
+    font-family: 'open sans';
+    border-radius: .5rem;
+    border: none;
+    width: 90%;
+}
+.cuadro1 form button{
+    font-family: 'poppins';
+    border: none;
+    background: #547640;
+    padding: .8rem;
+    display: block;
+    width: 10rem;
+    margin: 1rem 0 0 1.2rem;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    border-radius: 3px;
+}
+
+input::-webkit-input-placeholder {
+    text-align: left;
+  }
+  input:-moz-placeholder {
+    text-align: left;
+  }
+  input:-ms-input-placeholder { 
+    text-align: left;
+  }
+
+
+/****************** septima seccion  mapa y footer*********************/
+
+footer{
+    background: #547640;
+    font-family: 'Open Sans';
+}
+.mapa{
+    margin-top: 5rem;
+}
+
+.pie{
+    color: white;
+    border-bottom: .2rem white solid;
+    display: flex;
+    width: 60%;
+    padding-top: 2rem;
+}
+.logopie{
+    margin-right: 10%;
+}
+.textopie{
+    display: flex;
+    justify-content: flex-end;vertical-align: top;
+
+}
+.textopie p{
+    margin:1rem;
+    width: 45%;
+    line-height: 2.5rem;
+    text-align: right;  
+}
+
+.textopie p > img{
+    margin-left: 90%;
+    display: block; 
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+.logopie img{
+    width: 50%;
+}
+
+.copy{
+    text-align: center;
+    margin: 5px auto;
+    padding-bottom:10rem; 
+    width: 60%;
+    color:white;
+    font-size: 1.2rem;
+}
+
+
+/*------------ responsing  telefono-----------------*/
+@media screen and (max-width: 640px) {
+    nav{
+        overflow: hidden;
+    }
+
+
+    #btn-menu,  label {
+        display: block;
+        float: right;
+        background: white;
+        padding:2px;
+    }
+    #btn-menu{
+        display: none;
+    }
+    
+    .navegacion{
+        right: -100%;
+        position: absolute;
+        top:30px;
+        padding-top:30px; 
+        background:white;
+        float:right;
+        z-index: 100;
+        width: 60%;
+        display: none;
+        opacity: 0;
+        
+    }
+    .navegacion a{
+        display: block;
+        font-weight: bold;
+        color: #553322;
+        text-decoration: none;
+        text-align: right;
+        font-size: 1.8rem;
+        margin:8px 8px;
+        letter-spacing:.2rem;
+    }
+    .contenedor h1{
+        width: 90%;
+        font-family: 'Poppins';
+        margin: 5rem auto 0;
+        text-align: center;
+        font-size: 2.5rem;
+        color:white;
+        letter-spacing:.1rem;
+        line-height: 3rem;
+        animation-duration: 3s;
+        animation-name:aparecer;
+    }
+    .contenedor h1 >strong img{
+        width:8%;
+    }
+    #btn-menu:checked ~ div .navegacion{
+        right: 0%;        
+        display: block;
+        opacity: 1;
+        transition: 1s;
+    }
+    #btn-menu:checked ~ div .barra{
+        background: white;
+    }
+
+/*------------------resposnive SC2------------------*/
+.img1,.cuadro1{  
+    min-height:30rem;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+/*----------------------------------------------------*/
+/*------------------resposnive amenidades------------------*/
+    .image-gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(200px, auto);
+        grid-gap: 5px;
+        margin: 0 ; /* centerkan image-gallery */	
+    }
+    .image-gallery .imguno{
+        grid-column: 1;
+        grid-column-end: -1;  
+        grid-row-start:1;
+        grid-row-end: 2;
+    }
+    .image-gallery .img2{
+        grid-column: 1;
+        grid-column-end: -1;  
+        grid-row-start:2;
+        grid-row-end: 3;
+    }
+    .image-gallery .img3{
+        grid-column-start: 1;
+        grid-column-end: -1;  
+        grid-row-start:3;
+        grid-row-end: 4;
+    }
+    .image-gallery .img4{
+        grid-column-start: 1;
+        grid-column-end: -1;  
+        grid-row-start:4;
+        grid-row-end: 5;
+    }
+    .image-gallery .img5{
+        grid-column-start: 1;
+        grid-column-end: -1;  
+        grid-row-start:5;
+        grid-row-end: 6;
+    }
+    .image-gallery .img6{
+        grid-column-start: 1;
+        grid-column-end: -1;  
+        grid-row-start:6;
+        grid-row-end: 7;
+    }
+    .image-gallery .img7{
+        grid-column-start: 1;
+        grid-column-end: -1;  
+        grid-row-start:7;
+        grid-row-end: 8
+        
+    }
+    .image-gallery .img8{
+        grid-column-start:1;
+        grid-column-end: -1;   
+        grid-row-start: 8;
+        grid-row-end: 9;
+    }
+    .image-gallery .img9{
+        grid-column-start: 1;
+        grid-column-end: -1;  
+        grid-row-start:9;
+        grid-row-end: 10;
+    }
+    .image-gallery .img10{
+        grid-column-start: 1;
+        grid-column-end: -1;  
+        grid-row-start:10;
+        grid-row-end: 11;
+    }
+    .contet img{
+        height: 10rem;
+        margin: 1rem auto;
+        display: none;
+    }
+    /*------------------------------------*/
+
+  /****************** Cuarta seccion  tipo de apartamentos*********************/  
+
+    .part2 a{
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+    }
+    /***************************************/
+
+    /****************** sexta seccion formulario y youtube *********************/
+    .sec6 h4 p{
+        width: 80%;
+        font-size: 2rem;
+    }
+    .youtube{
+        min-height: 100%;
+    }
+    .formulario{
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+   
+    
+    /***************************************/
+
+    /****************** septima seccion  mapa y footer*********************/
+    .pie, .copy{
+        display: block;
+        width: 80%;
+        
+    }
+    .logopie{
+        margin: auto;
+        text-align: center;
+    }
+    .logopie img{        
+        width: 60%;
+    }
+    .textopie{
+        display: block;
+        text-align: center;
+    }
+    .textopie p{
+        margin: 30px auto;
+        width: 80%;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+    .textopie p > img{
+        margin:5px auto;
+    }
+    /***************************************/
+}
+
+
+
+/**********************************************/
+/****************ANIMACIONES *********************/
+@keyframes aparecer {
+    from {
+      opacity: 0;
+      font-size: 1.5rem;
+    }
+  
+    to {
+      opacity: 1;
+      font-size: 2.5rem;
+    }
+}
+
+@keyframes aparecerdos {
+    from {
+      opacity: 0;
+      margin-top: 10%;
+    }
+  
+    to {
+      opacity: 1;
+      margin-top: 0;
+    }
+}
